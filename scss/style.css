@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --main-color: #CD6C4E;
+  --main-color: linear-gradient(45deg, #969090, #797272);
   --second-color: #2E3C69;
   --third-color: #e07f60;
 }
@@ -91,7 +91,7 @@ body {
   background: var(--main-color);
 }
 .main__header .main__header-wrapp {
-  max-width: 1280px;
+  max-width: 1600px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -181,17 +181,16 @@ body {
   background: #fff;
   min-height: 730px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
   overflow-x: hidden;
-  padding: 10px 0;
 }
 .our .our__wrapp {
-  max-width: 1280px;
+  max-width: 1600px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 0 0 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -200,8 +199,8 @@ body {
   transform: translate(100px);
 }
 .our .our__wrapp .our__image {
-  max-width: 488px;
-  max-height: 500px;
+  max-width: 650px;
+  max-height: 749px;
   overflow: hidden;
   position: relative;
 }
@@ -237,11 +236,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: #6B6868;
+  margin: 10px 0;
 }
 
 /*### ADVANT SECTION ###*/
 .advant {
-  background: var(--third-color);
+  background: var(--main-color);
   min-height: 452px;
   display: flex;
   justify-content: center;
@@ -250,7 +250,7 @@ body {
   overflow-x: hidden;
 }
 .advant__wrapp {
-  max-width: 1280px;
+  max-width: 1600px;
   width: 100%;
   box-sizing: border-box;
   padding: 5px 15px;
@@ -318,7 +318,7 @@ body {
   padding: 0 15px;
 }
 .price__wrapp {
-  max-width: 1280px;
+  max-width: 1600px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -431,6 +431,7 @@ body {
   padding: 50px 80px;
   box-sizing: border-box;
   background: #3a519a;
+  border-radius: 3px;
 }
 .wrapp__comment .comment {
   font-family: "Source Sans Pro", sans-serif;

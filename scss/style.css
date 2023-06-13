@@ -33,7 +33,6 @@ body {
 }
 
 .wrapp__social {
-  background: var(--main-color);
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -88,14 +87,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--main-color);
+  background-color: #fdfff2;
+  background-image: url("../img/mbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 222px;
+  height: 100vh;
 }
 .main__header .main__header-wrapp {
   max-width: 1600px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   margin: 10px 0 0 0;
 }
@@ -111,7 +115,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 62px;
-  color: #FFFFFF;
+  color: #000;
   margin: 20px 0;
 }
 .main__header .main__header-wrapp .wrapp__text .desc__second {
@@ -119,7 +123,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #000;
 }
 .main__header .main__header-wrapp .wrapp__text .btn {
   font-family: "Source Sans Pro", sans-serif;
@@ -140,32 +144,6 @@ body {
 @keyframes text__transform {
   0% {
     transform: translate(-200vh);
-    opacity: 0;
-  }
-  40% {
-    transform: translate(0vh);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.main__header .main__header-wrapp .wrapp__image {
-  max-width: 483px;
-  max-height: 618px;
-  width: 100%;
-  overflow: hidden;
-  animation: image__transform 4s forwards;
-  opacity: 0;
-}
-.main__header .main__header-wrapp .wrapp__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@keyframes image__transform {
-  0% {
-    transform: translate(200vh);
     opacity: 0;
   }
   40% {
@@ -241,7 +219,7 @@ body {
 
 /*### ADVANT SECTION ###*/
 .advant {
-  background: var(--main-color);
+  background: #f3f0f0;
   min-height: 452px;
   display: flex;
   justify-content: center;
@@ -285,7 +263,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: 24px 0 10px 0;
   text-wrap: balance;
@@ -295,7 +273,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: 0;
   text-wrap: balance;
@@ -410,7 +388,7 @@ body {
 }
 
 .swiper-button-prev, .swiper-button-next {
-  background: var(--main-color);
+  background: var(--second-color);
   padding: 8px;
   border-radius: 100%;
   width: 55px;
@@ -418,7 +396,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--main-color) !important;
+  background: var(--third-color) !important;
 }
 
 .swiper-pagination-bullet {
@@ -455,7 +433,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--main-color);
+  background: #f3f0f0;
   min-height: 720px;
 }
 .enroll__wrapp {

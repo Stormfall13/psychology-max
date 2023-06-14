@@ -39,8 +39,8 @@ body {
   padding: 5px 0;
 }
 .wrapp__social .link__social {
-  width: 33px;
-  height: 33px;
+  width: 42px;
+  height: 42px;
   display: inline-block;
   margin: 3px 5px;
 }
@@ -284,7 +284,7 @@ body {
   min-height: 885px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background-image: url("../img/bgpsy.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -300,14 +300,15 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   opacity: 0;
   transform: translate(-100px);
 }
 .price__wrapper {
-  max-width: 712px;
-  min-height: 300px;
+  max-width: 630px;
+  min-height: 268px;
   width: 100%;
-  background: var(--third-color);
+  background: rgba(46, 60, 104, 0.7);
   border-radius: 4px;
 }
 .price__title {
@@ -321,12 +322,12 @@ body {
   margin: 35px auto;
 }
 .price__price {
-  max-width: 590px;
+  max-width: 300px;
   margin: 0 auto;
 }
 .price__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px dashed #fff;
   box-sizing: border-box;
@@ -336,16 +337,9 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 21px;
   color: #FFFFFF;
   margin: 2px 0;
-}
-.price__cena {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  color: #FFFFFF;
 }
 
 /*### REVIEW SECTION ###*/
@@ -432,15 +426,16 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background: #f3f0f0;
   min-height: 720px;
 }
 .enroll__wrapp {
-  max-width: 1280px;
+  padding: 0 15px 15px 15px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 .enroll__form {
   display: flex;
@@ -526,14 +521,37 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.enroll__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+}
+.enroll__overlay img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 /*### FOOTER ###*/
 footer {
   display: flex;
-  background: var(--second-color);
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-end;
   padding: 40px 20px;
+  background: var(--second-color);
+}
+footer .wrapp__footer {
+  max-width: 959px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 footer .copyright {
   font-family: "Source Sans Pro";
@@ -548,8 +566,8 @@ footer .copyright {
   display: flex;
 }
 .footer__social-wrapp .footer__link-social {
-  width: 33px;
-  height: 33px;
+  width: 52px;
+  height: 52px;
   display: inline-block;
   margin: 3px 5px;
 }

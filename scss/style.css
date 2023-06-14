@@ -449,6 +449,7 @@ body {
   border-radius: 3px;
   min-height: 474px;
   box-sizing: border-box;
+  padding: 0 10px;
   opacity: 0;
   transform: translate(-150px);
 }
@@ -547,9 +548,10 @@ footer {
   background: var(--second-color);
 }
 footer .wrapp__footer {
-  max-width: 959px;
+  max-width: 50%;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -664,5 +666,8 @@ footer .copyright {
   }
   .wrapp__comment {
     padding: 20px;
+  }
+  footer .wrapp__footer {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

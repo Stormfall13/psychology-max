@@ -105,10 +105,24 @@ closePopup.addEventListener('click', () => {
 
 const btnPopup = document.querySelector('.btn__popup')
 const popupComplete = document.querySelector('.popup__complete')
+const closeComplete = document.querySelector('.close__complete')
+const inputPopup = document.querySelectorAll('.input__popup')
+
 
 btnPopup.addEventListener('click', () => {
     formPopup.style.display = 'none'
     setTimeout(() => {
         popupComplete.style.display = 'flex'
+        for (let inputPopups of inputPopup){
+            inputPopups.value = ''
+        }  
     }, 600)
+})
+
+closeComplete.addEventListener('click', () => {
+    setTimeout(() => {
+        popupOverlay.style.display = ''
+        formPopup.style.display = ''
+        popupComplete.style.display = ''
+    }, 600) 
 })

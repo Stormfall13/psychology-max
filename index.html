@@ -45,11 +45,8 @@
                     Lorem, ipsum dolor sit amet consectetur 
                     adipisicing elit. At, libero deleniti voluptatum.
                 </p>
-                <div class="btn">Записаться на прием</div>
+                <div class="btn btn__opened">Записаться на прием</div>
             </div>
-            <!-- <div class="wrapp__image">
-                <img src="img/bg1.png" alt="">
-            </div> -->
         </div> 
     </div> 
 </header>
@@ -184,11 +181,15 @@
 
 <section class="enroll">
     <div class="enroll__wrapp">
-        <div class="enroll__form element-animation">
+        <form class="enroll__form element-animation">
             <p class="enroll__title">Записаться на прием</p>
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш телефон">
+            <input type="text" placeholder="Ваше имя" name="name">
+            <input type="text" placeholder="Ваш телефон" name="phone">
             <button class="btn__submit">Записаться на прием</button>
+        </form>
+        <div class="enroll__complete">
+            <p class="complete__text">Отправлено</p>
+            <img src="img/done.svg" alt="">
         </div>
         <div class="enroll__image element-animation">
             <img src="img/fbg.png" alt="">
@@ -215,6 +216,24 @@
     </div>
 </footer>
 
+<div class="popup__overlay">
+    <form class="form__popup">
+        <div class="close__popup">
+            <img src="img/close.svg" alt="">
+        </div>
+        <p class="popup__title">Записаться на прием</p>
+        <input type="text" placeholder="Ваше имя" name="name">
+        <input type="text" placeholder="Ваш телефон" name="phone">
+        <button class="btn__popup">Записаться на прием</button> 
+    </form>
+    <div class="popup__complete">
+        <p class="complete__popup">Отправлено</p>
+        <img src="img/done.svg" alt="">
+    </div> 
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>

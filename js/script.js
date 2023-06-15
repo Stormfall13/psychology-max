@@ -70,3 +70,45 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+
+
+const enrollForm = document.querySelector('.enroll__form')
+const btnSubmit = document.querySelector('.btn__submit')
+const enrollComplete = document.querySelector('.enroll__complete')
+
+btnSubmit.addEventListener('click', () => {
+    setTimeout(() => {
+        enrollForm.style.display = 'none';
+        enrollComplete.style.display = 'flex';
+    }, 1000)
+})
+
+
+const popupOverlay = document.querySelector('.popup__overlay')
+const formPopup = document.querySelector('.form__popup')
+const closePopup = document.querySelector('.close__popup')
+const btnOpened = document.querySelector('.btn__opened')
+
+btnOpened.addEventListener('click', () => {
+    popupOverlay.style.display = 'flex' 
+    setTimeout(() => {
+        popupOverlay.style.opacity = '1'
+    }, 800)
+})
+
+closePopup.addEventListener('click', () => {
+    popupOverlay.style.opacity = '0'
+    setTimeout(() => {
+        popupOverlay.style.display = ''
+    }, 800)
+})
+
+const btnPopup = document.querySelector('.btn__popup')
+const popupComplete = document.querySelector('.popup__complete')
+
+btnPopup.addEventListener('click', () => {
+    formPopup.style.display = 'none'
+    setTimeout(() => {
+        popupComplete.style.display = 'flex'
+    }, 600)
+})
